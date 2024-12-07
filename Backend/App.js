@@ -4,6 +4,7 @@ dotenv.config();
 const express = require("express");
 const app = express();
 const cors = require("cors");
+
 app.use(cors());
 
 app.get("/", (req, res) => {
@@ -11,3 +12,7 @@ app.get("/", (req, res) => {
 });
 
 module.exports = app;
+
+app.post("/", (req, res) => {
+  res.send("is this possible ");
+});

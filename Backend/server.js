@@ -12,3 +12,7 @@ server.listen(port, () => {
 http.createServer(function (res, req) {
   res.writeHead("2");
 });
+
+app.get(function () {
+  return log;
+});
